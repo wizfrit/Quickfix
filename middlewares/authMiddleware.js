@@ -1,0 +1,39 @@
+/*
+const jwt = require('jsonwebtoken');
+const User = require('../models/User');
+
+const protect = async (req, res, next) => {
+    let token;
+
+    if (req.headers.authorization && req.headers.authorization.startsWith('Bearer')) {
+        try {
+            token = req.headers.authorization.split(' ')[1];
+            const decoded = jwt.verify(token, process.env.JWT_SECRET);
+
+            req.user = await User.findById(decoded.id).select('-password');
+            next();
+        } catch (error) {
+            res.status(401).json({ message: 'Not authorized' });
+        }
+    }
+
+    if (!token) {
+        res.status(401).json({ message: 'No token, not authorized' });
+    }
+};
+
+module.exports = { protect };
+*/
+const protect = async (req, res, next) => {
+    // Simulate a logged-in user for testing
+    req.user = {
+        id: 'mock123',
+        name: 'Mock User',
+        email: 'mock@example.com',
+        role: 'client'
+    };
+    next();
+};
+
+module.exports = { protect };
+
