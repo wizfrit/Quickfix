@@ -10,6 +10,7 @@ const ratingRoutes = require('./routes/ratingRoutes');
 const requestRoutes = require('./routes/requestRoutes');
 const quoteRoutes = require('./routes/quoteRoutes');
 const paymentRoutes = require('./routes/paymentRoutes');
+const blogRoutes = require('./routes/blogRoutes');
 
 // Initialize
 const app = express();
@@ -29,6 +30,7 @@ app.use('/api/ratings', ratingRoutes);
 app.use('/api/requests', requestRoutes);
 app.use('/api/quotes', quoteRoutes);
 app.use('/api/payments', paymentRoutes);
+app.use('/api/blogs', blogRoutes);
 
 
 // Home route

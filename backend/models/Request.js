@@ -41,6 +41,12 @@ const requestSchema = new mongoose.Schema({
         ref: 'User',
         required: false,
     },
+    rating: {
+        type: Number,
+        min: 0,
+        max: 5,
+        required: false
+    },
     createdAt: {
         type: Date,
         default: Date.now

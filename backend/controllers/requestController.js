@@ -33,12 +33,16 @@ const getRequests = async (req, res) => {
     try {
         // If authenticated client, return their own requests
         if (req.user && req.user.role === 'client') {
-            const requests = await Request.find({ client: req.user._id }).sort({ createdAt: -1 });
+            const requests = await Request.find({ client: req.user._id })
+                .populate('professional', 'name email phoneNumber')
+                .sort({ createdAt: -1 });
             return res.json(requests);
         }
 
         // Otherwise (professionals or unauthenticated) return open requests
-        const requests = await Request.find({ $or: [{ status: 'open' }, { status: { $exists: false } }] }).sort({ createdAt: -1 });
+        const requests = await Request.find({ $or: [{ status: 'open' }, { status: { $exists: false } }] })
+            .populate('professional', 'name email phoneNumber')
+            .sort({ createdAt: -1 });
         res.json(requests);
     } catch (error) {
         console.error('GetRequests Error:', error);
@@ -103,4 +107,39 @@ const completeRequest = async (req, res) => {
     }
 };
 
-module.exports = { placeRequest, getRequests, getSingleRequest, getAssignedRequests, completeRequest };
+// Submit rating for a completed request
+const submitRequestRating = async (req, res) => {
+    try {
+        if (!req.user) return res.status(401).json({ message: 'Not authorized' });
+        
+        const { requestId, rating } = req.body;
+
+        if (!requestId || !rating) {
+            return res.status(400).json({ message: 'Please provide requestId and rating' });
+        }
+
+        if (rating < 0 || rating > 5) {
+            return res.status(400).json({ message: 'Rating must be between 0 and 5' });
+        }
+
+        const request = await Request.findById(requestId);
+        if (!request) {
+            return res.status(404).json({ message: 'Request not found' });
+        }
+
+        // Only the client can rate their request
+        if (request.client.toString() !== req.user._id.toString()) {
+            return res.status(403).json({ message: 'Only the client can rate this request' });
+        }
+
+        request.rating = rating;
+        await request.save();
+
+        res.json({ message: 'Rating submitted successfully', request });
+    } catch (error) {
+        console.error('SubmitRating Error:', error);
+        res.status(500).json({ message: error.message });
+    }
+};
+
+module.exports = { placeRequest, getRequests, getSingleRequest, getAssignedRequests, completeRequest, submitRequestRating };

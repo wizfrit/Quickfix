@@ -98,4 +98,26 @@ const getProfile = async (req, res) => {
     }
 };
 
-module.exports = { registerUser, loginUser, getProfile };
+// Search Professionals by Skill
+const searchProfessionals = async (req, res) => {
+    try {
+        const { skill } = req.query;
+        
+        if (!skill) {
+            return res.status(400).json({ message: 'Please provide a skill to search' });
+        }
+
+        // Search for professionals with the given skill (case-insensitive)
+        const professionals = await User.find({
+            role: 'professional',
+            isActive: true,
+            skills: { $regex: new RegExp(skill, 'i') }
+        }).select('-password');
+
+        res.json(professionals);
+    } catch (error) {
+        res.status(500).json({ message: error.message });
+    }
+};
+
+module.exports = { registerUser, loginUser, getProfile, searchProfessionals };
