@@ -1,0 +1,88 @@
+/* Main background */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fcf2dc; /* Light beige */
+  }
+  
+  /* Top banner with logo */
+  .header {
+    background-color: #d6b87c;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #aaa;
+  }
+  
+  .logo-text {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 26px;
+    letter-spacing: 5px;
+    color: #002d4c;
+    font-weight: bold;
+  }
+  
+  .logo-sub {
+    font-size: 11px;
+    color: #444;
+  }
+  
+  /* Sign-up container */
+  .signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 85vh;
+  }
+  
+  /* Form box */
+  .signup-box {
+    background-color: #002d4c; /* Navy blue */
+    padding: 40px 30px;
+    border-radius: 6px;
+    width: 320px;
+    color: #f0e2b4;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .signup-box h2 {
+    text-align: center;
+    color: #f0e2b4;
+    margin-bottom: 30px;
+  }
+  
+  /* Labels and inputs */
+  .signup-box label {
+    display: block;
+    margin: 15px 0 5px;
+    color: #f0e2b4;
+  }
+  
+  .signup-box input {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  /* Submit button */
+  .signup-box button {
+    background-color: #f7e9d0;
+    color: #002d4c;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    width: 100%;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .signup-box button:hover {
+    background-color: #e6d1ac;
+  }
+  

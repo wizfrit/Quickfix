@@ -1,0 +1,30 @@
+/* src/components/Navbar.css */
+.navbar {
+    background-color: #f4e3c1;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-weight: bold;
+    font-size: 24px;
+    color: #0d2b3e;
+  }
+  
+  .icons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-input {
+    padding: 5px;
+    margin-right: 10px;
+  }
+  
+  .icon {
+    margin: 0 5px;
+    font-size: 18px;
+  }
+  

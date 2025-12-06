@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+.homepage {
+    font-family: 'DM Serif Display', serif;
+    background-color: #f4e7c5;
+    color: #0a2b3c;
+    padding: 0;
+    margin: 0;
+  }
+  
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #dab664;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    height: 60px;
+  }
+  
+  .navbar nav button {
+    margin: 0 10px;
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .navbar nav .auth {
+    background-color: #0a2b3c;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
+  
+  .intro {
+    text-align: left;
+    padding: 40px 20px;
+  }
+  
+  .work-with-us {
+    font-weight: bold;
+    color: #0a2b3c;
+    margin-top: 20px;
+  }
+  
+  .services {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .service-grid-custom {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 20px;
+    justify-items: center;
+  }
+  
+  .service-item {
+    text-align: center;
+    font-family: 'DM Serif Display', serif;
+  }
+  
+  .service-item img {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+  }
+  
+  .service-item p {
+    font-size: 14px;
+    margin: 0;
+    color: #0a2b3c;
+  }
+
+  .section {
+    margin-top: 100px; /* or padding-top */
+  }
+  
+  
+  .why-container {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    padding: 40px 30px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .features-left {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    flex: 1;
+    justify-items: center;
+  }
+  
+  .feature-box img {
+    width: 135px;
+    height: auto;
+  }
+  
+  .why-text {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    font-family: 'DM Serif Display', serif;
+    color: #0a2b3c;
+  }
+  
+  .why-text h2 {
+    font-size: 24px;
+    color: #0a2b3c;
+    margin-bottom: 10px;
+  }
+  
+  .why-text p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  
+  .reviews {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .review-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .review-grid div {
+    width: 22%;
+    background-color: #fffaf1;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .footer {
+    background-color: #0a2b3c;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+  }
+  
+  .footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer .quick-links button {
+    background: none;
+    border: none;
+    color: white;
+    margin: 0 10px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  

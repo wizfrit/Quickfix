@@ -1,0 +1,264 @@
+/* Base styles */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #F1E8D4;
+    margin: 0;
+    color: #002F4B;
+  }
+/* Header */
+.header {
+    background-color: #D7B981;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  /* Logo */
+  .logo h1 {
+    margin: 0;
+    font-size: 1.8rem;
+  }
+  
+  .logo p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #002F4B;
+  }
+  
+  /* Search Bar */
+  .search-container {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    max-width: 400px;
+    margin: 0 20px;
+  }
+  
+  .search-input {
+    flex: 1;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+  }
+  
+  .search-btn {
+    padding: 8px 12px;
+    background-color: #002F4B;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+  }
+  
+  /* Profile Picture */
+  .profile-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-pic {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #002F4B;
+  }
+  
+  
+  .icons span {
+    font-size: 1.2rem;
+    margin-left: 15px;
+    cursor: pointer;
+  }
+.view-bids-wrapper {
+    background-color: #fdf1d9;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    padding-bottom: 50px;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #debb74;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+  }
+  
+  .nav-logo {
+    height: 50px;
+  }
+  
+  .nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .search-icon {
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .profile-circle {
+    width: 35px;
+    height: 35px;
+    background-color: #0f2c3a;
+    border-radius: 50%;
+  }
+  
+  /* Back Button */
+  .back-button-container {
+    margin: 30px 25px 20px;
+  }
+  
+  .back-button {
+    background-color: #002c49;
+    color: white;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  /* Bids Section */
+ /* Full-width section wrapper */
+ .bids-section1, 
+.bids-container1, 
+.bids-grid-wrapper, 
+.bids-header1, 
+.bids-row1, 
+.action-cell1, 
+.accept-button1, 
+.accepted-text, 
+.bids-grid-wrapper h2, 
+.error-text {
+    font-family: 'Segoe UI', sans-serif;
+}
+.bids-section1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;   /* centers the container */
+    padding: 20px 0;           /* top/bottom spacing */
+    background: transparent;    /* outer background stays transparent */
+}
+
+/* Black card container */
+.bids-container1 {
+    max-width: 1000px;         /* limits card width */
+    width: 100%;
+    background-color: #002c49;     /* black outer card */
+    border-radius: 12px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;    /* centers inner grid */
+}
+
+/* Cream inner grid wrapper */
+.bids-grid-wrapper {
+    background-color: #faf7f2; /* cream card */
+    border-radius: 10px;
+    padding: 24px;
+    width: 100%;                /* fills black card width */
+    box-sizing: border-box;
+    color: #333;                /* dark text for readability */
+}
+
+/* Heading inside the cream card */
+.bids-grid-wrapper h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;               /* dark text for cream background */
+}
+
+/* Header row of the grid */
+.bids-header1 {
+    display: grid;
+    grid-template-columns: 80px 1fr 120px 120px 140px; /* adjust as needed */
+    font-weight: 600;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+/* Data rows */
+.bids-row1 {
+    display: grid;
+    grid-template-columns: 80px 1fr 120px 120px 140px; /* same as header */
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    font-weight: 500;
+    color: #333;               /* dark text for cream background */
+}
+
+.bids-row1:last-child {
+    border-bottom: none;
+}
+
+/* Action cell inside a row */
+.action-cell1 {
+    display: flex;
+    gap: 8px;
+}
+
+/* Accept button styling */
+.accept-button1 {
+    background-color: #0f2c3a;  /* dark button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.accept-button1:hover {
+    background-color: #122f44;  /* slightly lighter on hover */
+}
+
+/* Accepted text styling */
+.accepted-text {
+    font-weight: bold;
+    font-size: 16px;
+    color: rgb(28, 98, 28);
+}
+
+/* Error text */
+.error-text {
+    color: red;
+    margin-bottom: 10px;
+}
+
+   /* Footer */
+   .footer {
+    background-color: #002F4B;
+    color: white;
+    padding: 1.5rem 2rem;
+  }
+  
+  .footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer ul li {
+    margin: 5px 0;
+  }
+  
+  .footer a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  

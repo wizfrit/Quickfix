@@ -1,0 +1,73 @@
+.about-container {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #F1E8D4;
+    color: #002F4B;
+    padding: 2rem;
+}
+.about-banner {
+    background-color: #d8b98c; /* match the header background */
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .banner-img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  
+.about-heading {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.about-subheading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.about-section {
+    margin-bottom: 1.5rem;
+}
+
+.about-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-section li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+/* Reusing your existing footer style */
+.footer {
+    background-color: #002F4B;
+    color: white;
+    padding: 1.5rem 2rem;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin: 5px 0;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+

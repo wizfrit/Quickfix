@@ -1,0 +1,118 @@
+/* src/pages/FreelancerDashboard.css */
+.freelancer-dashboard {
+  background-color: #fdf2dc;
+  padding: 20px;
+  font-family: 'Arial Rounded MT Bold', sans-serif;
+}
+
+/* Header */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #debe89;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+
+.nav-logo {
+  height: 50px;
+}
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+
+.search-icon {
+  font-size: 18px;
+}
+
+.profile-circle {
+  width: 40px;
+  height: 40px;
+  background-color: #002c49;
+  border-radius: 50%;
+}
+
+/* Tagline */
+.tagline {
+  margin: 20px 0;
+  font-size: 24px;
+  color: #002c49;
+  text-align: center;
+}
+
+/* Sections */
+.jobs-section,
+.bids-section,
+.upcoming-section {
+  background-color: #002c49;
+  border-radius: 12px;
+  color: #fff;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.jobs-section h2,
+.bids-section h2,
+.upcoming-section h2 {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+/* Table Rows */
+.job-row {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr 1fr 0.8fr 2fr 1fr; /* job#, service, location, urgency, details, action */
+  align-items: center;
+  column-gap: 12px;
+  padding: 12px 8px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.job-row.header {
+  font-weight: bold;
+  border-bottom: 2px solid #f3c96b;
+}
+
+/* Upcoming Jobs Cards */
+.upcoming-card {
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.upcoming-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Buttons */
+.view-btn,
+.bid-btn,
+.view-more-btn {
+  padding: 8px 12px;
+  background-color: #f3c96b;
+  border: none;
+  border-radius: 5px;
+  color: #002c49;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.view-btn:hover,
+.bid-btn:hover,
+.view-more-btn:hover {
+  background-color: #e0b85f;
+}
+
+.view-more-btn {
+  justify-self: end;
+}

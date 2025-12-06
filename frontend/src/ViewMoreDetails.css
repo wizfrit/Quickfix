@@ -1,0 +1,62 @@
+/* src/pages/MoreDetails.css */
+.more-details-page {
+    background-color: #fdf2dc;
+    min-height: 100vh;
+  }
+  
+  /* Shared styles same as ClientDetails.css */
+  .back-button-container {
+    background-color: #002c49;
+    padding: 10px 10px;
+  }
+  
+  .back-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .details-container {
+    padding: 20px;
+  }
+  
+  .section-title {
+    color: #002c49;
+    margin-bottom: 20px;
+  }
+  
+  .detail-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .detail-item {
+    display: flex;
+    margin-bottom: 15px;
+  }
+  
+  .detail-label {
+    font-weight: bold;
+    width: 150px;
+    color: #002c49;
+  }
+  
+  .detail-value {
+    flex: 1;
+  }
+  
+  .place-bid-btn {
+    background-color: #002c49;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+  }

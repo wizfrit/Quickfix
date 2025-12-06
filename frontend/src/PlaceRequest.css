@@ -1,0 +1,246 @@
+/* Base styles */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #F1E8D4;
+    margin: 0;
+    color: #002F4B;
+  }
+  
+/* Header */
+.header {
+    background-color: #D7B981;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  /* Logo */
+  .logo h1 {
+    margin: 0;
+    font-size: 1.8rem;
+  }
+  
+  .logo p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #002F4B;
+  }
+  
+  /* Search Bar */
+  .search-container {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    max-width: 400px;
+    margin: 0 20px;
+  }
+  
+  .search-input {
+    flex: 1;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+  }
+  
+  .search-btn {
+    padding: 8px 12px;
+    background-color: #002F4B;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+  }
+  
+  /* Profile Picture */
+  .profile-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-pic {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #002F4B;
+  }
+  
+  
+  .icons span {
+    font-size: 1.2rem;
+    margin-left: 15px;
+    cursor: pointer;
+  }
+  
+
+/* src/pages/RequestForm.css */
+.request-form-wrapper {
+    background-color: #f9e7c2;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Top Navbar */
+  .navbar {
+    background-color: #debb74;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+  }
+  
+  .nav-logo {
+    height: 50px;
+  }
+  
+  .nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .search-icon {
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .profile-circle {
+    width: 30px;
+    height: 30px;
+    background-color: #0f2c3a;
+    border-radius: 50%;
+  }
+  
+  /* Back Button */
+  .back-button-container {
+    margin: 20px 25px 10px;
+  }
+  
+  .back-button {
+    background-color: #0f2c3a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  /* Form Card */
+  .request-form-card {
+    background: #f9e7c2;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 40px;
+    border-radius: 10px;
+  }
+  
+  .request-form-title {
+    font-size: 22px;
+    color: #0f2c3a;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+  
+  .form-group select,
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #f9e7c2;
+    border-radius: 4px;
+    font-size: 15px;
+  }
+  
+  .form-group textarea {
+    min-height: 80px;
+    resize: vertical;
+  }
+  
+  .radio-group {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .radio-group label {
+    font-weight: normal;
+  }
+  
+  .time-slot-group {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .budget-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .budget-group input {
+    flex: 1;
+  }
+  
+  /* Buttons */
+  .form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  
+  .form-buttons button {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  
+  .cancel-button {
+    background-color: #0f2c3a;
+    color: white;
+  }
+  
+  .submit-button {
+    background-color: #0f2c3a;
+    color: white;
+  }
+
+   /* Footer */
+   .footer {
+    background-color: #002F4B;
+    color: white;
+    padding: 1.5rem 2rem;
+  }
+  
+  .footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer ul li {
+    margin: 5px 0;
+  }
+  
+  .footer a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  

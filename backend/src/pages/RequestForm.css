@@ -1,0 +1,33 @@
+/* src/pages/RequestForm.css */
+.request-form {
+    padding: 40px;
+    background-color: #f4e3c1;
+    height: 100vh;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+    gap: 15px;
+  }
+  
+  input {
+    padding: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  .form-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  button {
+    padding: 8px 15px;
+    background-color: #0d2b3e;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  

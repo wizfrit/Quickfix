@@ -1,0 +1,218 @@
+/* src/pages/ClientDetails.css */
+.client-details-page {
+    background-color: #fdf2dc;
+    min-height: 100vh;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #debe89;
+    padding: 10px 20px;
+  }
+  
+  .nav-logo {
+    height: 50px;
+  }
+  
+  .nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .search-icon {
+    font-size: 18px;
+  }
+  
+  .profile-circle {
+    width: 40px;
+    height: 40px;
+    background-color: #002c49;
+    border-radius: 50%;
+  }
+  
+  .back-button-container {
+    background-color: #002c49;
+    padding: 16px; /* Adds space around the button */
+    text-align: left; /* Or center, depending on where you want the button */
+  }
+  
+  .back-button {
+    background-color: #002c49;
+    border: 1px solid white; /* Optional: visible border */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 8px;
+    width: auto; /* Button resizes based on content */
+  }
+  
+  
+  .details-container {
+    padding: 20px;
+  }
+  
+  .section-title {
+    color: #002c49;
+    margin-bottom: 20px;
+  }
+  
+  .detail-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .detail-item {
+    display: flex;
+    margin-bottom: 15px;
+  }
+  
+  .detail-label {
+    font-weight: bold;
+    width: 150px;
+    color: #002c49;
+  }
+  
+  .detail-value {
+    flex: 1;
+  }
+  
+  .more-details-btn {
+    background-color: #002c49;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .quote-form {
+  max-width: 350px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 10px;
+  font-family: Arial, sans-serif;
+}
+
+.form-title {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #444;
+}
+
+.quote-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.25s;
+}
+
+.quote-form input:focus {
+  border-color: #4b74ff;
+  outline: none;
+}
+
+.submit-btn {
+  background: #4b74ff;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background: #3458d1;
+}
+.quote-section {
+  max-width: 420px;
+}
+
+.section-title {
+  margin-bottom: 1rem;
+}
+
+.quote-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.quote-form input {
+  padding: 0.6rem;
+  border: 1px solid #ccc; /* you can change */
+  border-radius: 4px;     /* you can change */
+}
+
+.quote-form button {
+  padding: 0.7rem 1.2rem;
+  border: none;           /* you handle color */
+  border-radius: 4px;     /* you handle styling */
+  cursor: pointer;
+}
+
+.quotes-section {
+  margin-top: 20px;
+}
+
+.quotes-title {
+  margin-bottom: 1rem;
+}
+
+.no-quotes {
+  margin-top: 0.5rem;
+}
+
+.quote-card {
+  border: 1px solid #ddd;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+}
+
+.quote-row {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 4px;
+}
+
+.quote-label {
+  font-weight: 600;
+}
